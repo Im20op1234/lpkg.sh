@@ -1,5 +1,17 @@
 #!/bin/sh
 
+if ! command -v zip >/dev/null 2>&1
+then
+    echo "package 'zip' is not installed or is broken"
+    exit 1
+fi
+
+if ! command -v unzip >/dev/null 2>&1
+then
+    echo "package 'unzip' is not installed or is broken"
+    exit 1
+fi
+
 LPKG_DIR="$HOME/.lpkg" # lpkg.sh directory.
 PKG_DIR="$LPKG_DIR/packages" # Directory of installed packages.
 
