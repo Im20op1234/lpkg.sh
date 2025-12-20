@@ -32,10 +32,9 @@ to start a package or script inside the package do this
 ```
 ./lpkg.sh run package
 ```
-if there is no start.sh do this
-
+to run a script from the package do this
 ```
-./lpkg.sh run package script.sh
+./lpkg.sh run package [script].sh
 ```
 
 thats all for this.
