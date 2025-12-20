@@ -157,10 +157,7 @@ case "$1" in
     version)
         run_ver
         ;;
-    help)
+    help|*)
         help_msg
-        ;;
-    *)
-        echo "Unkown command '$1' do ./lpkg.sh help : or sh lpkg.sh help for help"
         ;;
 esac
