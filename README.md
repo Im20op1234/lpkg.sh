@@ -20,7 +20,8 @@ to make a package you need zip and unzip
 zip is for making the .pkg file
 
 ```
-zip -o filename.pkg folder/*
+cd build
+zip -o filename.pkg *
 ```
 
 unzip is for unziping the .pkg
